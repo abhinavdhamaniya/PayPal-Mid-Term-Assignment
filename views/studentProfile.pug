@@ -1,0 +1,74 @@
+doctype html
+head
+  title Student Profile
+  style.
+    #customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+    #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    }
+    #customers tr:nth-child(even){background-color: #f2f2f2;}
+    #customers tr:hover {background-color: #ddd;}
+    #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+    }
+
+  style.
+    a:link, a:visited {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    }
+    a:hover, a:active {
+    background-color: DarkGreen;
+    }
+
+h1 Welcome #{name}
+p Profile Details
+table(style='width:100%' border='2' id='customers')
+  tr
+    th Data
+    th Value
+  tr
+    td Registration Number
+    td #{regno}
+  tr
+    td Password
+    td #{pass}
+  tr
+    td Name
+    td #{name}
+  tr
+    td Email
+    td #{email}
+  tr
+    td Subscribed Courses
+    td #{courses}
+
+br
+h3 Operations Available:
+p
+  a(href='subscribeCourse') Subscribe to a course
+p
+  a(href='getSubscribed') View courses Subscribed by me
+p
+  a(href='courseByProff') Search course by proffesor name
+p
+  a(href='unsubCourse') Unsubscribe to a Course
+
+br 
+br 
+
+p
+  a(href='studLogin') Logout
